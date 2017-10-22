@@ -35,7 +35,6 @@ rm(labels)
 
 names(activities) <- "Activity"
 names(subjects) <- "Subject"
-subjects[[1]] <- sapply(subjects[[1]], function(x) {paste("Subject#", x)})
 set <- cbind(set, activities, subjects)
 rm(subjects)
 rm(activities)
@@ -43,9 +42,4 @@ rm(activities)
 ##Creat independent tidy data set with the average of each variable
 ##for each activity and each subject
 
-averages.activity <- set %>% group_by(Activity) %>% select(-Subject) %>%
-    summarise_all(mean) %>% rename(Averaged_by = Activity)
-averages.subject <- set %>% group_by(Subject) %>% select(-Activity) %>%
-    summarise_all(mean) %>% rename(Averaged_by = Subject)
-averages <- bind_rows(averages.activity, averages.subject)
-rm(averages.activity, averages.subject)
+averages <- set %>% group_by(Activity, Subject) %>% summarise_all(mean)
