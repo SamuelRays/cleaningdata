@@ -4,7 +4,7 @@
 	Contains activity or subject name by which mean values of are present in other columns
 2. tBodyAcc-mean()-X
 	Mean of the body acceleration signals in X axis subsequently meaned for the variable in column Averaged_by
-3. tBodyAcc-mean()-Y
+3. tBodyAcc-mean()-Y>
 	Mean of the body acceleration signals in Y axis subsequently meaned for the variable in column Averaged_by
 4. tBodyAcc-mean()-Z
 	Mean of the body acceleration signals in Z axis subsequently meaned for the variable in column Averaged_by

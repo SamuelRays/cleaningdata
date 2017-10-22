@@ -1,7 +1,7 @@
 ## Getting and cleaning data
 
-R version used - 3.4.2
-OS - Windows 8.1x64
+R version used - 3.4.2<br/>
+OS - Windows 8.1x64<br/>
 Required loading the dplyr library.
 
 Description of the R script work.
